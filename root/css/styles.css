@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.btn{
+    background-color: #8B48BF;
+
+}
+
+.primerosarticulos{
+    width: 50%;
+
+}
+.segundosarticulos{
+    width: 60%;
+}
+#aboutmanage{
+    width: 40%;
+}
+
+.primerosarticulos article{
+    width: 50%;
+
+}
+.space{
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+
+}
