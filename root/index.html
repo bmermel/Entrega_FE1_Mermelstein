@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manage - Brian Mermelstein</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
     <header class="flex space">
@@ -22,7 +27,7 @@
       <button class="btn">Get Started</button>
     </header>
     <main>
-      <section class="flex">
+      <section class="flex margenes">
         <article class="primerosarticulos" id="art1">
           <h1>Bring everyone together to build better products.</h1>
           <p>
@@ -31,8 +36,8 @@
           </p>
           <button class="btn">Get Started</button>
         </article>
-        <article>
-          <img src="./images/ilustration-intro.svg" alt="Grafico" />
+        <article class="primerosarticulos">
+          <img src="./images/ilustration-intro.svg" alt="Grafico" class="margenes">
         </article>
       </section>
       <section class="flex">
@@ -116,36 +121,39 @@
       <div class="division flexcenter">Simplify hoy your team words today.</div>
       <div class="division flexend"><button class="btn">Get Started</button></div>
     </section>
-    <footer class="flex espaciado">
-        <div class="flexarround">
-            <img src="./images/logo.svg" alt="logo">
-            <div>
-                <img src="./images/icon-facebook.svg" alt="">
-                <img src="./images/icon-youtube.svg" alt="">
-                <img src="./images/icon-twitter.svg" alt="">
-                <img src="./images/icon-pinterest.svg" alt="">
-                <img src="./images/icon-instagram.svg" alt="">
+    <footer>
+        <div  class="flex espaciado">        
+            <div class="flexarround divisionesfooter">
+                <img src="./images/logo.svg" alt="logo">
+                <div>
+                    <img src="./images/icon-facebook.svg" alt="">
+                    <img src="./images/icon-youtube.svg" alt="">
+                    <img src="./images/icon-twitter.svg" alt="">
+                    <img src="./images/icon-pinterest.svg" alt="">
+                    <img src="./images/icon-instagram.svg" alt="">
+                </div>
             </div>
-        </div>
-        <div>
-            <ul>
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>Products</li>
-                <li>About Us</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Careers</li>
-                <li>Community</li>
-                <li>Privacy Policy</li>
-            </ul>            
-        </div>
-        <div class="flex form">
-            <form action="./datos/resultado.php" method="post"></form>
-            <input type="email" name="email" id="email">
-            <button type="submit" class="btn"></button>
+            <div class="divisionesfooter">
+                <ul class="flex column">
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="divisionesfooter">
+                <ul class="flex column">
+                    <li>Careers</li>
+                    <li>Community</li>
+                    <li>Privacy Policy</li>
+                </ul>            
+            </div>
+            <div class="flex form divisionesfooter">
+                <form action="./datos/resultado.php" method="post">
+                <input type="email" name="email" id="email">
+                <button type="submit" class="btn"></button></form>
+
+            </div>
         </div>
     </footer>
   </body>
