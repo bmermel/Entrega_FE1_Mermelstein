@@ -6,25 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manage - Brian Mermelstein</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header class="flex space">
-      <img src="./images/logo.svg" alt="Logo" />
-      <nav>
-        <ul class="flex">
-          <li>Pricing</li>
-          <li>Product</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Community</li>
-        </ul>
-      </nav>
-      <button class="btn">Get Started</button>
+    <header>
+      <div class="header-desktop flex space">
+        <img src="./images/logo.svg" alt="Logo" />
+        <nav>
+          <ul class="flex">
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </nav>
+        <button class="btn">Get Started</button>
+      </div>
+
+      <div class="header-mobile flex" id="menumobile">
+        <img src="./images/logo.svg" alt="Logo" />
+        <nav>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="flex margenes">
@@ -34,10 +51,10 @@
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the large team goals in view
           </p>
-          <button class="btn">Get Started</button>
+          <button class="btn botonmain">Get Started</button>
         </article>
         <article class="primerosarticulos">
-          <img src="./images/ilustration-intro.svg" alt="Grafico" class="margenes">
+          <img src="./images/Ilustracion.png" alt="Grafico" class="margenes" />
         </article>
       </section>
       <section class="flex">
@@ -50,111 +67,126 @@
           </p>
         </article>
         <article id="aboutmanage2">
-          <div class="flex">
+          <div class="flex nomarginright">
             <span class="similboton">01</span>
             <h3>Track company-wide progress</h3>
           </div>
-          <p>
+          <p class="alineandoparrafos">
             See how your day-to-day tasks fit into the wider vision. Go from
             tracking progress at the milestone level all the way done to the
             smallest of details. Never lose sight of the bigger picture again.
           </p>
 
-          <div class="flex">
+          <div class="flex nomarginright">
             <span class="similboton">02</span>
             <h3>Advance built-in reports</h3>
           </div>
-          <p>
+          <p class="alineandoparrafos">
             Set internal delivery estimates and track progress toward company
             goals. Our customisable dashboard helps you build out the reports
             you need to keep key stakeholders informed.
           </p>
 
-          <div class="flex">
+          <div class="flex nomarginright">
             <span class="similboton">03</span>
             <h3>Everything you need in one place</h3>
           </div>
 
-          <p>
+          <p class="alineandoparrafos">
             Stop jumping from one service to another to communicate, store
             files, track tasks and share documents. Manage offers an all-in-one
             team productivity solution.
           </p>
         </article>
       </section>
-      <section class="center column">
+      <section class="center column separador">
         <h2>What they´ve said</h2>
 
-        <section class="flex">
-          <div class="card">
+        <section class="flex justifycenter">
+          <div class="card c1">
             <img src="./images/avatar-ali.png" alt="" />
-            <h3>Ali Bravo</h3>
-            <p>
+            <h3 class="textcenter">Ali Bravo</h3>
+            <p class="textcenter p_cards p_margins">
               “Manage has supercharged our team´s workflow. The ability to
               maintain visibility on larger milestones at all times keeps
               everyone motivated.”
             </p>
           </div>
-          <div class="card">
-            <img src="./images/avatar-ali.png" alt="" />
-            <h3>Ali Bravo</h3>
-            <p>
-              “Manage has supercharged our team´s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
+          <div class="card c2">
+            <img src="./images/avatar-richard.png" alt="" />
+            <h3 class="textcenter">Richard TexTex</h3>
+            <p class="textcenter p_cards p_margins">
+              “We have been able to cancel so many other subscriptions since
+              using manage. There ir no more cross-channel confusion and
+              everyone is much more focused.”
             </p>
           </div>
-          <div class="card">
-            <img src="./images/avatar-ali.png" alt="" />
-            <h3>Ali Bravo</h3>
-            <p>
-              “Manage has supercharged our team´s workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated.”
+          <div class="card c3">
+            <img src="./images/avatar-anisha.png" alt="" />
+            <h3 class="textcenter">Anisha Valka</h3>
+            <p class="textcenter p_cards p_margins">
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can´t stop recommending them to everyone
+              i talk to!”
             </p>
           </div>
         </section>
-        <button class="btn">Get Started</button>
+        <button class="btn botonmain">Get Started</button>
       </section>
     </main>
-    <section class="prefooter flex ">
-      <div class="division flexcenter">Simplify hoy your team words today.</div>
-      <div class="division flexend"><button class="btn">Get Started</button></div>
+    <section class="prefooter flex justifycenter">
+      <div class="division flexcenter prefoot_padding bigfont">
+        Simplify hoy your team works today.
+      </div>
+      <div class="division flexbtnfooter prefoot_padding">
+        <button class="btn2 btn_footer">Get Started</button>
+      </div>
     </section>
     <footer>
-        <div  class="flex espaciado">        
-            <div class="flexarround divisionesfooter">
-                <img src="./images/logo.svg" alt="logo">
-                <div>
-                    <img src="./images/icon-facebook.svg" alt="">
-                    <img src="./images/icon-youtube.svg" alt="">
-                    <img src="./images/icon-twitter.svg" alt="">
-                    <img src="./images/icon-pinterest.svg" alt="">
-                    <img src="./images/icon-instagram.svg" alt="">
-                </div>
-            </div>
-            <div class="divisionesfooter">
-                <ul class="flex column">
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
-                </ul>
-            </div>
-            <div class="divisionesfooter">
-                <ul class="flex column">
-                    <li>Careers</li>
-                    <li>Community</li>
-                    <li>Privacy Policy</li>
-                </ul>            
-            </div>
-            <div class="flex form divisionesfooter">
-                <form action="./datos/resultado.php" method="post">
-                <input type="email" name="email" id="email">
-                <button type="submit" class="btn"></button></form>
-
-            </div>
+      <div class="flex spacebetween">
+        <div class="flexarround divisionesfooter">
+          <img src="./images/LogoWhite.png" alt="logo" id="logofooter" />
+          <div>
+            <img src="./images/icon-facebook.svg" alt="" class="socialmedia" />
+            <img src="./images/icon-youtube.svg" alt="" class="socialmedia" />
+            <img src="./images/icon-twitter.svg" alt="" class="socialmedia" />
+            <img src="./images/icon-pinterest.svg" alt="" class="socialmedia" />
+            <img src="./images/icon-instagram.svg" alt="" class="socialmedia" />
+          </div>
         </div>
+        <div class="flmobile">
+          <div class="divisionesfooter">
+            <ul class="flex column margenesft">
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Products</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+          <div class="divisionesfooter">
+            <ul class="flex column margenesft">
+              <li>Careers</li>
+              <li>Community</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex form divisionesfooter2">
+          <form action="./datos/resultado.php" method="post">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Update in your inbox..."
+              class="emailstyle"
+            />
+            <button type="submit" class="btn botonmain2">Go</button>
+          </form>
+        </div>
+      </div>
+      <section class="flexbtnfooter">
+        <p class="copyright">Copyright 2020. All Rights Reserved</p>
+      </section>
     </footer>
   </body>
 </html>

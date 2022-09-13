@@ -1,3 +1,8 @@
+/* Estilos Generales */
+
+
+
+
 body{
     margin: 0px;
     padding: 0px;
@@ -28,16 +33,69 @@ p{
 
 
 }
+h2{font-size: 36px;
+margin-top: 0px;
+color: #232851;
+
+}
 
 .btn:hover {
     transition: 0.5s;
-    background-color: rgb(240, 133, 107);
-    box-shadow: 0px 4px 7px rgb(242, 95, 58);
+    background-color: #8B48BFB2;
+    box-shadow: #8b48bf6f;
 }
 .margenes{
     margin: 5% 5% 5% 5%;
 }
+.botonmain{
+    width: 134px;
+height: 44px;
+margin-top: 3%;
+margin-bottom: 8%;
+}
+.botonmain2{
+    width: 63px;
+height: 42px;
+margin-top: 3%;
+margin-bottom: 8%;
+}
+h3{
+    color: #232851;
 
+}
+
+
+
+
+/* Estilos del Header */
+
+#menumobile{
+    display: none;
+    margin-top: 10%;
+    
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 35px;}
+
+    #art1 p{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-weight: bold;
+        text-align: center;
+        line-height: 26px;
+    }
+    #aboutmanage > p{
+/*         padding-left: 10%;
+        padding-right: 10%; */
+        font-weight: bold;
+        text-align: center;
+        line-height: 24px;
+    }
+    .emailstyle{
+        width: 270px;
+    }
 nav ul li {
     padding-left: 20px;
     padding-right: 20px;
@@ -45,6 +103,7 @@ nav ul li {
     font-size: 13px;
     font-weight: 500;
     line-height: 176.1%;
+    line-height: 19px;
 
 }
 
@@ -52,47 +111,80 @@ nav ul li:hover {
     transition: 0.5s;
     color: rgb(143, 148, 167);
 }
+nav{
+    width: 50%;
+    margin-left: 10%;
+}
 header{
     margin-top: 2%;
+
 }
 header img{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 0%;
 }
 header button{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 0%;
+    margin-right: 10%;
 }
 
-
+.copyright{
+    color: white;
+    background-color: #1E1E26;
+    position: relative;
+    top: -20px;
+    right: 20px;
+    font-size: 12px;
+    color: #8C8C94;    
+}
+/* Estilos de la primera parte (primer division) */
 
 .primerosarticulos{
     width: 45%;
     margin-left: 5%;
     margin-right: 5%;
+
 }
-.margenes{
-    margin-left: 5%;
-    margin-right: 5%;
+.primerosarticulos h1{
+    color: #232851;
+
 }
+
 .segundosarticulos{
     width: 60%;
 }
 #aboutmanage{
     width: 40%;
-    margin-left: 5%;
+    margin-left: 9.5%;
     margin-right: 5%;
 }
 #aboutmanage2{
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 10%;
     width: 50%;
 }
+#aboutmanage2 p {/*  se le vuelve a dar un poco de margin extra para equiparar esteticamente con el original pues mayor resolución */
+    margin-right: 5%;
+    color: #B3B2B7;
+    
+}
+
 
 .primerosarticulos article{
     width: 50%;
 
 }
+
+.separador{
+    margin-top: 6%;
+}
+
+section.center.column.separador > h2
+{
+    margin-bottom: 6%;
+}
+
+/* Clases reutilizadas */
 .space{
     justify-content: space-between;
 }
@@ -100,10 +192,31 @@ header button{
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
     width: 30%;
     background-color: #FAFAFA;
-    
+ 
+
 }
+.textcenter{
+    text-align: center;
+    color: #242E53;
+}
+.p_cards{
+    color: #B9B9C1;
+}
+.p_margins{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.margenes{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.justifycenter{justify-content: center;}
 
 .center{
     display: flex;
@@ -113,37 +226,75 @@ header button{
 .similboton{
     background-color: #8B48BF;
     color: white;
-    border-radius: 50px;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 3%;
+    border-radius: 30px;
+    font-size: 18px;
     padding-bottom: 1%;
     text-align: center;
-    font-weight: bold;
-
-    width: 134px;
-    height: 44px;
+    font-weight: 700;
+    padding: 10px 25px;
+    width:35px;
+    height: 21.5px;
+    margin: 10px
+    
+    
 }
-.prefooter{
 
-    background-color: #8B48BF;
-    color: white;
-    justify-content: space-between;
+
+.alineandoparrafos{
+    margin-left: 18%;
 }
 .division{
     width: 50%;
 }
-.flexend{
+.flexbtnfooter{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    right: 8%;
+
 }
 .flexcenter{
     display: flex;
     justify-content: center;
 }
+
+.flexarround{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5vw;
+}
+
+.spacebetween{
+    justify-content: space-between;
+}
+
+
+.card img{
+    position: relative;
+    left: 187px;
+    top: -35px;
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
+/* Footer */
+
+.margenesft{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.flmobile{display: flex;
+    margin-top: 2%;
+}
 footer{
     background-color: #1E1E26;
-    height: 25vh;
+    height: fit-content;
     color: white;
 }
 
@@ -152,32 +303,255 @@ footer{
     font-size: 16px;
 
 }
-.flexarround{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 5vw;
-}
-.form{
-    height: 10vh;
-}
-.espaciado{
-    justify-content: space-between;
-}
-.divisionesfooter{
-    width: 15%;
-
-}
-.card img{
-    position: relative;
-    left: 187px;
-    top: -10px;
-    width: 70px;
-    height: 70px;
-}
 
 footer div ul li{
     margin-top: 8px;
     margin-bottom: 8px;
 
+}
+.divisionesfooter
+{
+    width: 25%;
+    margin-top: 2%;
+
+}
+.divisionesfooter2
+{
+margin-left: 15%;
+margin-right: 10%;
+
+}
+#logofooter{
+    width: 145px;
+    height: 26px;
+}
+.socialmedia{
+    height: 20px;
+    width: 20px;
+}
+
+.form{
+    height: 10vh;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+.emailstyle{
+    background: #FFFFFF;
+border-radius: 50px;
+padding: 5px 15px 5px 15px;
+height: 30px;
+border: none;
+}
+.emailstyle:enabled	{
+    background: #FFFFFF;
+border-radius: 50px;
+padding: 5px 15px 5px 15px;
+height: 30px;
+border: none;
+border-style: none;
+}
+.prefooter{
+
+    background-color: #8B48BF;
+    color: white;
+    justify-content: space-between;
+    height: 300px;
+}
+.prefoot_padding{padding-left: 5%;
+    padding-right: 10%;
+}
+ div.division.flexcenter.prefoot_padding.bigfont {
+    font-size: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    padding-top: 7%;
+
+}
+.btn_footer{
+    color: white;
+    align-items: center;
+    height: 40px;
+}
+.btn2:hover{
+    transition: 0.5s;
+    background-color: #8B48BFB2;
+    box-shadow: #8b48bf6f;
+    color: white;
+
+}
+.btn2{
+    background-color:white;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #8B48BF;
+    
+    padding-left: 25px;
+    padding-right: 25px;
+    border:none;
+}
+
+@media (max-width: 480px)
+{
+
+    .primerosarticulos{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    body > main > section.flex.margenes{
+        flex-direction: column-reverse;
+    }
+    body > main > section.flex.margenes > article:nth-child(2) > img{max-width: 100%;}
+    #art1 > h1   /* PARA OBTENER ESTE SELECTOR, con el inspect de google, click derecho seleccionar selector */
+    {
+        font-size: 58px;
+        letter-spacing: -0.035em;
+    }
+    body > main > section.flex.margenes{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .header-desktop{
+        display: none;
+    }
+    #menumobile{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+    div.card.c2, div.card.c3{
+        display: none;
+    }
+    .primerosarticulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body > main > section:nth-child(2){flex-direction: column;
+    }
+    #aboutmanage {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+    }
+    #aboutmanage2 {
+        padding-top: 15%;
+        width: 75%;
+        margin: auto;
+        margin-right: 0px;
+        text-align: center;
+    }
+    h3{
+        font-size: 16px;
+    }
+    #aboutmanage2 > div{
+        align-items: center;
+    }
+    #aboutmanage2 > div > h3{
+       background-color: red;
+       padding: 5px 5px 5px 5px;
+    }
+    .nomarginright
+    {
+        margin-right: 0px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 80%;
+        background-color: #FAFAFA;
+        margin: auto;
+    
+    }
+    section.center.column.separador > h2
+        {
+            margin-bottom: 15%;
+        }
+
+        .card img{
+            position: relative;
+            left: 155px;
+            top: -35px;
+            width: 70px;
+            height: 70px;
+        }
+        body > section{
+            flex-direction: column;
+            align-items: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            font-size: 40px;
+        }
+        body > section > div.division.flexcenter.prefoot_padding.bigfont
+        {
+            text-align: center;
+            letter-spacing: -0.005em;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            padding-right: 0px;
+        }
+        .flexbtnfooter{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin-left: 11%;
+            margin-top: 15%;
+            margin-bottom: 15%;
+            padding-right: 0px;
+
+    }
+    .division{
+        width: 60%;
+    }
+    .prefooter {
+        background-color: #8B48BF;
+        color: white;
+        justify-content: space-between;
+        height: 320px;
+    }
+    body > footer > div{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .prefooter{
+        max-width: 100%;
+    }
+    .divisionesfooter{
+        width: 90%;
+    }
+    footer{height: fit-content;}
+    .form{
+        justify-content: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    body > footer > div > div.flexarround.divisionesfooter > div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .flexarround{
+        flex-direction: column-reverse;
+        align-items: space-evenly;
+        margin-top: 10%;
+    }
+    #logofooter{
+        margin-top: 15%;
+        padding-left: 30%;
+    }
+    .copyright{
+        left: 15px;
+    }
+    .flmobile{
+        display: flex;
+        justify-content: space-around   ;
+        width: 80%;
+    }
 }
