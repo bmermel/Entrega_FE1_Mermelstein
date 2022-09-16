@@ -130,6 +130,18 @@ header button{
     margin-right: 10%;
 }
 
+/* colores del nav de los links del footer */
+#divisionmedio1 > ul > li:nth-child(3) > a, #divisionmedio1 > ul > li:nth-child(2) > a, #divisionmedio1 > ul > li:nth-child(1) > a, body > footer > div > div.flmobile.fseparacion > div:nth-child(1) > ul > li:nth-child(1) > a,body > footer > div > div.flmobile.fseparacion > div:nth-child(1) > ul > li:nth-child(2) > a,body > footer > div > div.flmobile.fseparacion > div:nth-child(1) > ul > li:nth-child(3) > a,body > footer > div > div.flmobile.fseparacion > div:nth-child(1) > ul > li:nth-child(4) > a {text-decoration: none;color: #FFFFFF;}
+
+/* arreglando alineacion nav footer */
+body > footer > div > div.flmobile.fseparacion > div:nth-child(1) > ul{
+    width: 70px;
+    position: absolute;
+    left: 20%;
+}
+
+
+
 
 /* Estilos de Main */
 
@@ -612,4 +624,11 @@ nav ul li a:hover {
         text-align: center;
         margin-top: 25%;
     }
+/*     arreglando centrado de footer nav */
+    body > footer > div > div.flmobile.fseparacion > div:nth-child(1) > ul {
+        left: 0%
+        }
+        .margenesft{
+        margin-left: 10%;
+        }
 }
